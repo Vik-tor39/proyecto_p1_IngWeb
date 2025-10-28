@@ -1,0 +1,55 @@
+@use '../base/vars' as v;
+@use '../base/mixins' as m;
+
+.features {
+    margin-top: 5rem;
+    padding: 2rem 0;
+    background: v.$secundario;
+    position: relative;
+    @include m.tablet_mq {
+        background: linear-gradient(to right, v.$secundario 60%, v.$softgreen 100%);
+    }
+    &__grid {
+        margin: 0 4rem;
+        @include m.tablet_mq {
+            display: grid;
+            align-items: center;
+            grid-template-columns: 1.5fr 2fr;
+            column-gap: 4rem;
+            margin: 0 auto;
+        }
+    }
+    &__img {
+        max-width: 100%;
+        max-height: 100%;
+        opacity: 0.1;
+        position: absolute;
+        top: 4rem;
+        object-fit: cover;
+        @include m.tablet_mq {
+            position: unset;
+            opacity: unset;
+        }
+    }
+    &__info {
+        text-align: center;
+        color: v.$blanco;
+        @include m.tablet_mq {
+            text-align: start;
+        }
+    }
+    &__listElm {
+        text-align: start;
+        font-weight: 700;
+        margin-top: 2rem;
+    }
+    &__parrafo {
+        &--head {
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+    &__heading {
+        font-size: 4rem;
+    }
+}
