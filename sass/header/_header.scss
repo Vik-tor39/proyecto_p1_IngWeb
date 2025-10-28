@@ -1,0 +1,86 @@
+@use '../base/mixins' as m;
+@use '../base/vars' as v;
+
+.header {
+    &__barra{
+        @include m.tablet_mq {
+            display: flex;
+            align-items: center;
+            margin: 3rem auto;
+        }    
+    }
+    &__logo {
+        margin: 0 auto 1rem auto;
+        min-width: 20rem;
+        font-size: 4rem;
+        font-weight: 500;
+        text-align: center;
+        &--width {
+            font-weight: 900;
+        }
+        @include m.tablet_mq {
+            font-size: 3rem;
+            margin: 0;
+            text-align: start;
+            flex-grow: 2;
+        }
+    }
+    &__background {
+        @include m.tablet_mq {
+            background: linear-gradient(to right, v.$blanco 10%, transparent 100%),
+            url(../img/init_image.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+        }
+    }
+    &__grid {
+        @include m.tablet_mq {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 7rem 0;
+        }
+    }
+    &__texto {
+        min-width: 20rem;
+        margin: 3rem 2rem 0 2rem;
+        text-align: center;
+        padding: 2rem;
+        border: .6rem solid v.$negro;
+        @include m.tablet_mq {
+            margin: 0;
+            border: 0;
+            padding: 0;
+            text-transform: uppercase;
+            text-align: start;
+            padding-right: 2rem;
+        }
+
+    }
+    &__parrafo {
+        font-size: 3rem;
+        font-weight: 700;
+        @include m.tablet_mq {
+            font-size: 5rem;
+        }
+        &--primary {
+            margin-top: 0;
+            @include m.tablet_mq {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+        }
+        &--second {
+            @include m.tablet_mq {
+                margin-top: 0;
+                font-size: 2.7rem;
+                color: v.$gris;
+            }
+        }
+        strong {
+            @include m.tablet_mq {
+                font-size: 11rem;
+            }
+        }
+    }
+}

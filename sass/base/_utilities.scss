@@ -1,0 +1,7 @@
+@use 'vars' as v;
+.primary-color-text {
+    color: v.$primario;
+}
+.margin-none {
+    margin: 0;
+}

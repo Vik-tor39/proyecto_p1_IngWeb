@@ -5,55 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/app.css">
     <title>Examen P1</title>
 </head>
 <body>
-    <header>
-
-    </header>
-    <div class="nav-container contenedor">
-        <h2>Your<span>Logo</span></h2>
-        <nav class="nav-display">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Products</a>
-            <a href="#">Contact us</a>
-            <a class="btn" href="#">Buy Now</a>
-        </nav>
-    </div>
-
-    <div class="init-section">
-        <div class="contenedor init-text">
-            <div>
-                <p class="upper-text">Working toghter towards a <span>greener <strong>future</strong></span></p>
-                <p class="upper-text">The garden equipment industry needs a major green update.</p>
-                <a href="#" class="btn init-btn">Buy now</a>
+    <header class="header">
+        <div class="header__contenedor contenedor">
+            <div class="header__barra">
+                <h2 class="header__logo">Your<span class="header__logo--width">Logo</span></h2>
+                <nav class="navegator">
+                    <a href="#" class="navegator__link navegator__link--mrgNone">Home</a>
+                    <a href="#" class="navegator__link navegator__link--mrgNone">About us</a>
+                    <a href="#" class="navegator__link navegator__link--mrgNone">Products</a>
+                    <a href="#" class="navegator__link navegator__link--mrgNone">Contact us</a>
+                    <a href="#" class="navegator__link navegator__link--greenBtn">Buy now</a>
+                </nav>
             </div>
         </div>
-    </div>
-
-    <div class="contenedor about-global-container">
-        <div class="about-grid-container">
-            <div class="about-img">
-               <img src="img/about-img.jpg" alt="About img">
-               <div class="img-add">
-                    <p class="upper-text">3-in one <br><span>multi tool</span></p>
-               </div>
-            </div>
-            <div class="about-info">
-                <a href="#" class="upper-text">Saw Product</a>
-                <div class="about-text">
-                    <h2>About the Product</h2>
-                    <p>To date, the lawn and garden equipment manufacturing industry is worth a staggering $8.6 Billion. Gasoline-powered lawn and garden equipment accounted for 24-45% of all non-road gasoline emissions, according to the U.S. Environmental Protection Agency (EPA).</p>
-                    <p>If this figure does not raise any alarms, here is some context:</p>
-                    <p>One new gas-powered lawnmower produces the same amount of volatile organic compounds in one hour of operation as 11 new cars each being driven for the same amount of time.</p>
+        <div class="header__background">
+            <div class="header__contenedor contenedor">
+                <div class="header__grid">
+                    <div class="header__texto">
+                        <p class="header__parrafo header__parrafo--primary">Working Toghter Towards A <span class="primary-color-text">Greener <strong class="mark-text">Future</strong></span></p>
+                        <p class="header__parrafo header__parrafo--second">The Garden Equipment Industry needs a major green upgrade.</p>
+                        <a href="#" class="navegator__link navegator__link--greenBtn navegator__link--largeBtn">Buy now</a>
+                    </div>
                 </div>
-                <a href="#" class="btn about-btn">Contact Us</a>
             </div>
         </div>
-    </div>
+    </header>
 
+    <main>
+        <div class="about contenedor">
+            <div class="about__grid">
+                <div class="about__imgSection">
+                    <img src="img/about-img.jpg" alt="About img" class="about__img">
+                    <div class="about__imgAdd">
+                        <p class="about__parrafo about__parrafo--offer">3-in one <br><span>multi tool</span></p>
+                    </div>
+                </div>
+                <div class="about__info">
+                    <a href="#" class="about__link">Saw Product</a>
+                    <div class="about__text">
+                        <h2 class="about__heading">About the Product</h2>
+                        <p class="about__parrafo">To date, the lawn and garden equipment manufacturing industry is worth a staggering $8.6 Billion. Gasoline-powered lawn and garden equipment accounted for 24-45% of all non-road gasoline emissions, according to the U.S. Environmental Protection Agency (EPA).</p>
+                        <p class="about__parrafo">If this figure does not raise any alarms, here is some context:</p>
+                        <p class="about__parrafo">One new gas-powered lawnmower produces the same amount of volatile organic compounds in one hour of operation as 11 new cars each being driven for the same amount of time.</p>
+                    </div>
+                    <a href="#" class="about__link about__link--btn">Contact Us</a>
+                </div>
+            </div>
+            <div class="about__comments">
+                <div class="about__iconComment">
+                    <div class="about__icon">
+                        <img src="img/about-icon1.jpg" alt="Icon 1">
+                    </div>
+                    <div class="about__text">
+                        <h2 class="about__heading about__heading--icon">100% GREENG GARDENING EQUIPMENT</h2>
+                        <p class="about__parrafo--icon">Our products will operate on 100% sustaiinable power sources and at the same time product NO harmful emissions.    </p>
+                    </div>
+                </div>
+                <div class="about__iconComment">
+                    <div class="about__icon">
+                        <img src="img/about-icon2.jpg" alt="Icon 2">
+                    </div>
+                    <div class="about__text">
+                        <h2 class="about__heading about__heading--icon">ENHANCING OUR USER-EXPERIENCE</h2>
+                        <p class="about__parrafo--icon">Our products will operate on 100% sustaiinable power sources and at the same time product NO harmful emissions.    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     
 </body>
 </html>

@@ -1,0 +1,19 @@
+@use 'vars' as v;
+
+@mixin phone_mq {
+    @media(min-width:v.$phone) {
+        @content;
+    }
+}
+
+@mixin tablet_mq {
+    @media(min-width:v.$tablet) {
+        @content;
+    }
+}
+
+@mixin desktop_mq {
+    @media(min-width:v.$desktop) {
+        @content;
+    }
+}
