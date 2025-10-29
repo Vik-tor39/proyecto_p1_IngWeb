@@ -1,0 +1,23 @@
+@use '../base/vars' as v;
+@use '../base/mixins' as m;
+
+.gallery {
+    &__heading {
+        text-align: center;
+        margin: 4rem auto;
+    }
+    &__contenedor {
+        display: grid;
+        grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+        align-items: center;
+        @include m.tablet_mq {
+            align-items: center;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1.5fr 1fr 1fr;
+        }
+    }
+    &__img {
+        max-width: 100%;
+        object-fit: cover;
+    }
+}

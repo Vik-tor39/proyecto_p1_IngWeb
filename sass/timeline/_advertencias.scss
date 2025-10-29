@@ -1,0 +1,33 @@
+@use '../base/mixins' as m;
+@use '../base/vars' as v;
+
+.advertencias {
+    margin-top: 5rem;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    @include m.tablet_mq {
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__set {        
+        display: flex;
+        align-items: center;
+    }
+    &__img {
+        width: 100%;
+        object-fit: cover;
+        max-height: 100%;
+        flex: 1;
+    }
+    &__parrafo {
+        flex: 3;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+}
